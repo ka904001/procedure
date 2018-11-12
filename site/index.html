@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+
+</head>
+<body>
+  <div class="container">
+    <div class="bar" id="bar1"></div>
+    <div class="bar" id="bar2"></div>
+    <div class="bar" id="bar3"></div>
+    <div class="bar" id="bar4"></div>
+    <div class="bar" id="bar5"></div>
+    <div class="bar" id="bar6"></div>
+    <div class="bar" id="bar7"></div>
+    <div class="bar" id="bar8"></div>
+    <div class="bar" id="bar9"></div>
+    <div class="bar" id="bar10"></div>
+    <div class="bar" id="bar11"></div>
+    <div class="bar" id="bar12"></div>
+    <div class="bar" id="bar13"></div>
+    <div class="bar" id="bar14"></div>
+    <div class="bar" id="bar15"></div>
+    <div class="bar" id="bar16"></div>
+    <div class="bar" id="bar17"></div>
+    <div class="bar" id="bar18"></div>
+    <div class="bar" id="bar19"></div>
+    <div class="bar" id="bar20"></div>
+  </div>
+  <script type="text/javascript">
+      for(var i = 1; i<21; i++){
+        var bb = "bar"+i;
+        var bar = document.getElementById(bb);
+        bar.style.paddingTop = 200*Math.random() + 'px';
+      }
+  </script>
+</body>
+</html>

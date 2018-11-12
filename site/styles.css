@@ -1,0 +1,27 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  padding: 20px;
+  margin: 0px;
+  background-color: #FFF2D6;
+}
+.container{
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.bar{
+  position: relative;
+  opacity: 50%;
+  border: 2px solid white;
+  background-color: #00E7FF;
+  margin: 0.25%;
+  padding: 0% 2% 0% 2%;
+  border-radius: 10px;
+  float: left;
+}
