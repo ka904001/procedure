@@ -31,11 +31,23 @@
     <div class="bar" id="bar19"></div>
     <div class="bar" id="bar20"></div>
   </div>
+  <p id="wbr"></p>
   <script type="text/javascript">
       for(var i = 1; i<21; i++){
         var bb = "bar"+i;
         var bar = document.getElementById(bb);
         bar.style.paddingTop = 200*Math.random() + 'px';
+      }
+      var bars = new Array(20);
+      for(var i = 1; i<21; i++){
+        var bb = "bar"+i;
+        var bar = document.getElementById(bb);
+        const style = getComputedStyle(bar);
+        bars[i-1] = style.paddingTop;
+      }
+      for(var i = 0; i<20; i++){
+        var write = document.getElementById("#wbr");
+        write.innerHTML = bars[i];
       }
   </script>
 </body>
