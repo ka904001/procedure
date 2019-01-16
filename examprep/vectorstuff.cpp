@@ -14,14 +14,23 @@ int main(){
       cin>>massiv[i][j];
     }
   }
-  vector<int> summ(a, 0);
+  // vector<int> summ(a, 0);
+  // for(int i = 0; i< a; i++){
+  //   for(int j = 0; j < b; j++){
+  //     summ[i]+=massiv[i][j];
+  //   }
+  // }
+  vector<int> summ(b, 0);
   for(int i = 0; i< a; i++){
     for(int j = 0; j < b; j++){
-      summ[i]+=massiv[i][j];
+      summ[j]+=massiv[i][j];
     }
   }
-  for(int i = 0; i < a; i++){
-    cout<<"The summ of"<<' '<<i<<" row is:"<<' '<<summ[i]<<endl;
+  // for(int i = 0; i < a; i++){
+  //   cout<<"The summ of"<<' '<<i<<" row is:"<<' '<<summ[i]<<endl;
+  // }
+  for(int i = 0; i < b; i++){
+    cout<<"The summ of"<<' '<<i<<" column is:"<<' '<<summ[i]<<endl;
   }
   return 0;
 }
